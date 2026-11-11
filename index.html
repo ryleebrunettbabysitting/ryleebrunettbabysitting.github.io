@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rylee Brunett | Babysitting &amp; Dogsitting in Bethesda, MD</title>
+  <meta name="description" content="Reliable babysitting and dogsitting in Bethesda, MD. Book a session online with Rylee Brunett.">
+
+  <!--
+    ============================================================
+    HOW TO EDIT THIS PAGE
+    1. Search (Ctrl+F / Cmd+F) for "_HERE" to find every placeholder
+       and replace it with real info.
+    2. PHOTOS: put your photos in a folder called "images" next to
+       this file. Then replace each placeholder block like:
+         <div class="photo photo-placeholder">PHOTO_HERE ...</div>
+       with:
+         <img class="photo" src="images/your-photo.jpg" alt="Describe the photo">
+    3. BOOKING: see the "BOOKING" section below for where to paste
+       your Google Calendar (or Calendly / Cal.com) embed code.
+    ============================================================
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --iris: #9867C5;         /* main brand color */
+      --iris-deep: #6E45A3;    /* darker iris for buttons/text (better contrast) */
+      --iris-ink: #3E2763;     /* deepest shade for headings */
+      --iris-soft: #EFE7F8;    /* light lavender background */
+      --iris-mist: #F8F4FC;    /* very light background */
+      --ink: #2B2533;
+      --muted: #645C6E;
+      --white: #FFFFFF;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(62, 39, 99, 0.10);
+      --max: 1100px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Nunito Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.65;
+      font-size: 17px;
+    }
+    h1, h2, h3 {
+      font-family: "Fraunces", Georgia, serif;
+      color: var(--iris-ink);
+      line-height: 1.2;
+      font-weight: 650;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+    h2 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom: 0.6rem; }
+    h3 { font-size: 1.3rem; font-weight: 500; }
+    a { color: var(--iris-deep); }
+    img { max-width: 100%; display: block; }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+    section { padding: 88px 0; }
+    .eyebrow {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--iris-deep);
+      margin-bottom: 0.6rem;
+    }
+    .lead { color: var(--muted); font-size: 1.1rem; max-width: 620px; }
+    .center { text-align: center; }
+    .center .lead { margin: 0 auto; }
+
+    /* ---------- Buttons ---------- */
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    }
+    .btn-primary { background: var(--iris-deep); color: var(--white); box-shadow: 0 6px 18px rgba(110, 69, 163, .3); }
+    .btn-primary:hover { background: var(--iris-ink); transform: translateY(-2px); }
+    .btn-ghost { color: var(--iris-deep); border: 2px solid var(--iris); }
+    .btn-ghost:hover { background: var(--iris-soft); }
+
+    /* ---------- Photo placeholders ---------- */
+    .photo {
+      width: 100%;
+      border-radius: var(--radius);
+      object-fit: cover;
+      aspect-ratio: 4 / 5;
+    }
+    .photo-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      background:
+        repeating-linear-gradient(45deg, var(--iris-mist), var(--iris-mist) 12px, var(--iris-soft) 12px, var(--iris-soft) 24px);
+      border: 2px dashed var(--iris);
+      color: var(--iris-deep);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .photo-wide { aspect-ratio: 16 / 10; }
+    .photo-square { aspect-ratio: 1 / 1; }
+
+    /* ---------- Header ---------- */
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--iris-soft);
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; padding: 14px 24px; max-width: var(--max); margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.35rem; font-weight: 650;
+      color: var(--iris-ink); text-decoration: none;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .logo-dot {
+      width: 14px; height: 14px; border-radius: 50%;
+      background: var(--iris);
+      box-shadow: 10px 0 0 var(--iris-soft);
+      margin-right: 10px;
+    }
+    .nav-links { display: flex; gap: 22px; list-style: none; align-items: center; flex-wrap: wrap; }
+    .nav-links a { text-decoration: none; color: var(--ink); font-weight: 600; font-size: 0.97rem; }
+    .nav-links a:hover { color: var(--iris-deep); }
+    .nav-links .btn { padding: 10px 20px; color: var(--white); }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      background: linear-gradient(160deg, var(--iris-mist) 0%, var(--iris-soft) 100%);
+      padding: 80px 0 96px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: ""; position: absolute; right: -120px; top: -120px;
+      width: 380px; height: 380px; border-radius: 50%;
+      background: var(--iris); opacity: 0.12;
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center;
+      position: relative; z-index: 1;
+    }
+    .hero p.lead { margin: 18px 0 30px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-badges { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+    .badge {
+      background: var(--white); border: 1px solid var(--iris-soft);
+      border-radius: 999px; padding: 7px 14px; font-size: 0.9rem; font-weight: 600;
+      color: var(--iris-ink);
+    }
+    .badge::before { content: "✓ "; color: var(--iris); }
+    .hero .photo { box-shadow: var(--shadow); }
+
+    /* ---------- About ---------- */
+    .about-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 56px; align-items: center; }
+    .about p { margin-bottom: 1rem; }
+    .facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 24px; }
+    .fact { background: var(--iris-mist); border-radius: 14px; padding: 16px 18px; }
+    .fact strong { display: block; color: var(--iris-ink); }
+    .fact span { color: var(--muted); font-size: 0.95rem; }
+
+    /* ---------- Services ---------- */
+    .services { background: var(--iris-mist); }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 44px; }
+    .card {
+      background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow);
+      padding: 28px; display: flex; flex-direction: column;
+      border-top: 5px solid var(--iris);
+    }
+    .card .photo { aspect-ratio: 16 / 10; margin-bottom: 20px; }
+    .card .tag { font-size: 0.8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--iris-deep); }
+    .card h3 { margin: 4px 0 10px; }
+    .card p { color: var(--muted); margin-bottom: 14px; }
+    .card ul { list-style: none; margin-bottom: 20px; }
+    .card li { padding-left: 24px; position: relative; margin-bottom: 6px; font-size: 0.97rem; }
+    .card li::before {
+      content: ""; position: absolute; left: 0; top: 9px;
+      width: 10px; height: 10px; border-radius: 50%; background: var(--iris);
+    }
+    .price { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--iris-soft); }
+    .price strong { font-family: "Fraunces", Georgia, serif; font-size: 1.7rem; color: var(--iris-ink); font-weight: 650; }
+    .price span { color: var(--muted); }
+    .note { text-align: center; color: var(--muted); margin-top: 28px; font-size: 0.95rem; }
+
+    /* ---------- How it works ---------- */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 44px; counter-reset: step; }
+    .step { text-align: center; padding: 0 10px; }
+    .step::before {
+      counter-increment: step; content: counter(step);
+      display: flex; align-items: center; justify-content: center;
+      width: 52px; height: 52px; margin: 0 auto 16px; border-radius: 50%;
+      background: var(--iris-soft); color: var(--iris-deep);
+      font-family: "Fraunces", Georgia, serif; font-size: 1.4rem; font-weight: 650;
+    }
+    .step p { color: var(--muted); margin-top: 6px; }
+
+    /* ---------- Booking ---------- */
+    .booking { background: linear-gradient(180deg, var(--iris-soft), var(--iris-mist)); }
+    .booking-box {
+      background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow);
+      padding: 28px; margin-top: 36px;
+    }
+    .booking-box iframe { width: 100%; height: 640px; border: 0; border-radius: 12px; }
+    .booking-placeholder {
+      border: 2px dashed var(--iris); border-radius: 12px; min-height: 380px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 14px; padding: 30px; text-align: center; color: var(--iris-deep);
+      background: var(--iris-mist);
+    }
+    .booking-placeholder strong { font-size: 1.1rem; }
+    .booking-alt { text-align: center; margin-top: 20px; color: var(--muted); }
+
+    /* ---------- Gallery ---------- */
+    .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; }
+
+    /* ---------- Reviews ---------- */
+    .reviews { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 40px; }
+    .review {
+      background: var(--iris-mist); border-radius: var(--radius); padding: 28px;
+      border-left: 5px solid var(--iris);
+    }
+    .review p { font-style: italic; margin-bottom: 12px; }
+    .review span { font-weight: 700; color: var(--iris-ink); }
+
+    /* ---------- FAQ ---------- */
+    .faq { background: var(--iris-mist); }
+    .faq-list { max-width: 780px; margin: 40px auto 0; }
+    details {
+      background: var(--white); border-radius: 14px; padding: 18px 22px; margin-bottom: 12px;
+      box-shadow: 0 3px 12px rgba(62, 39, 99, 0.06);
+    }
+    summary { cursor: pointer; font-weight: 700; color: var(--iris-ink); list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--iris); font-size: 1.4rem; line-height: 1; }
+    details[open] summary::after { content: "–"; }
+    details p { margin-top: 10px; color: var(--muted); }
+
+    /* ---------- Contact ---------- */
+    .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 36px; }
+    .contact-item {
+      text-align: center; padding: 26px; border-radius: var(--radius);
+      border: 1px solid var(--iris-soft);
+    }
+    .contact-item .label { font-size: 0.8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--iris-deep); }
+    .contact-item a, .contact-item div.value { display: block; margin-top: 6px; font-weight: 700; color: var(--ink); text-decoration: none; word-break: break-word; }
+
+    /* ---------- Footer ---------- */
+    footer { background: var(--iris-ink); color: #E6DCF3; padding: 36px 0; text-align: center; font-size: 0.95rem; }
+    footer a { color: var(--white); }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 900px) {
+      .hero-grid, .about-grid { grid-template-columns: 1fr; gap: 36px; }
+      .hero .photo { max-width: 380px; margin: 0 auto; }
+      .about-grid .photo { max-width: 380px; margin: 0 auto; }
+      .cards, .steps, .contact-grid { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: repeat(2, 1fr); }
+      .reviews { grid-template-columns: 1fr; }
+      section { padding: 64px 0; }
+    }
+    @media (max-width: 640px) {
+      .nav-links { gap: 14px; }
+      .nav-links li.hide-sm { display: none; }
+      .facts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header>
+    <nav class="nav">
+      <a href="#top" class="logo"><span class="logo-dot"></span>Rylee Brunett</a>
+      <ul class="nav-links">
+        <li class="hide-sm"><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li class="hide-sm"><a href="#faq">FAQ</a></li>
+        <li class="hide-sm"><a href="#contact">Contact</a></li>
+        <li><a href="#book" class="btn btn-primary">Book now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Babysitting &amp; Dogsitting · Bethesda, MD</span>
+          <h1>Care you can count on, for your kids and your pups.</h1>
+          <p class="lead">
+            Hi, I'm Rylee Brunett! I'm a college student in the Bethesda area offering
+            dependable babysitting for kids of all ages and loving care for your dog,
+            whether that's an overnight stay at your home or a visit to mine.
+          </p>
+          <div class="hero-actions">
+            <a href="#book" class="btn btn-primary">Schedule a session</a>
+            <a href="#services" class="btn btn-ghost">See services &amp; rates</a>
+          </div>
+          <div class="hero-badges">
+            <!-- Edit these to match real qualifications (e.g. "CPR certified") -->
+            <span class="badge">CERTIFICATION_HERE</span>
+            <span class="badge">YEARS_HERE years of experience</span>
+            <span class="badge">References available</span>
+          </div>
+        </div>
+        <!-- PHOTO: replace with <img class="photo" src="images/headshot.jpg" alt="Rylee Brunett smiling"> -->
+        <div class="photo photo-placeholder">PHOTO_HERE<br>Friendly headshot (portrait)</div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <!-- PHOTO: replace with <img class="photo" src="images/about.jpg" alt="..."> -->
+        <div class="photo photo-placeholder">PHOTO_HERE<br>Casual photo (e.g. with a dog or outdoors)</div>
+        <div>
+          <span class="eyebrow">About me</span>
+          <h2>Nice to meet you!</h2>
+          <p>
+            I'm Rylee Brunett, a student at Montgomery College studying English. I grew up
+            in Tennessee and later Ohio, and have been caring for kids and animals for
+            YEARS_HERE years. ABOUT_SENTENCE_HERE (e.g. "I'm the oldest of four, so
+            bedtime routines and homework help come naturally.")
+          </p>
+          <p>
+            Parents and pet owners trust me because I show up on time, follow your
+            routines, and keep you updated while you're away, so you can relax
+            and enjoy your time out.
+          </p>
+          <div class="facts">
+            <div class="fact"><strong>Service area</strong><span>Bethesda &amp; nearby: AREAS_HERE</span></div>
+            <div class="fact"><strong>Availability</strong><span>AVAILABILITY_HERE (e.g. evenings &amp; weekends)</span></div>
+            <div class="fact"><strong>Safety</strong><span>CERTIFICATION_HERE</span></div>
+            <div class="fact"><strong>Transportation</strong><span>Own a car<h/span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="services" id="services">
+      <div class="wrap">
+        <div class="center">
+          <span class="eyebrow">Services &amp; rates</span>
+          <h2>How I can help</h2>
+          <p class="lead">Every family and every pet is different. Here's what I offer, and I'm always happy to talk through what you need.</p>
+        </div>
+
+        <div class="cards">
+          <!-- Babysitting -->
+          <article class="card">
+            <!-- PHOTO: replace with <img class="photo" src="images/babysitting.jpg" alt="..."> -->
+            <div class="photo photo-placeholder">PHOTO_HERE<br>Babysitting</div>
+            <span class="tag">For families</span>
+            <h3>Babysitting</h3>
+            <p>Attentive, engaged care for children of all ages, from infants to teens.</p>
+            <ul>
+              <li>Date nights, after school &amp; weekends</li>
+              <li>Meals, bath &amp; bedtime routines</li>
+              <li>Homework help &amp; screen-free play</li>
+              <li>Updates and photos while you're out</li>
+            </ul>
+            <div class="price">
+              <strong>$20</strong> <span>/ hour</span>
+            </div>
+          </article>
+
+          <!-- Overnight dogsitting at client's home -->
+          <article class="card">
+            <!-- PHOTO: replace with <img class="photo" src="images/dog-overnight.jpg" alt="..."> -->
+            <div class="photo photo-placeholder">PHOTO_HERE<br>Dogsitting at your home</div>
+            <span class="tag">For pups · Your place</span>
+            <h3>Overnight house sitting</h3>
+            <p>I stay overnight at your home so your dog keeps their usual routine and comfy bed.</p>
+            <ul>
+              <li>Walks, feeding &amp; playtime</li>
+              <li>Medication as directed</li>
+              <li>Mail, plants &amp; lights handled</li>
+              <li>Daily photo updates</li>
+            </ul>
+            <div class="price">
+              <strong>PRICE_HERE</strong> <span>/ night</span>
+            </div>
+          </article>
+
+          <!-- Dog boarding at sitter's home -->
+          <article class="card">
+            <!-- PHOTO: replace with <img class="photo" src="images/dog-boarding.jpg" alt="..."> -->
+            <div class="photo photo-placeholder">PHOTO_HERE<br>Dog staying at my home</div>
+            <span class="tag">For pups · My place</span>
+            <h3>Dog boarding at my home</h3>
+            <p>Your dog stays with me in a cozy, home setting instead of a kennel.</p>
+            <ul>
+              <li>One-on-one attention, no crowded kennel</li>
+              <li>Regular walks &amp; play</li>
+              <li>Feeding on your dog's schedule</li>
+              <li>Daily photo updates</li>
+            </ul>
+            <div class="price">
+              <strong>PRICE_HERE</strong> <span>/ night</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="note">Rates may vary for holidays, late nights, or special needs. Just ask! RATE_NOTE_HERE</p>
+      </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS ==================== -->
+    <section>
+      <div class="wrap">
+        <div class="center">
+          <span class="eyebrow">How it works</span>
+          <h2>Booking is easy</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>Pick a time</h3>
+            <p>Choose an open slot on the calendar below and tell me which service you need.</p>
+          </div>
+          <div class="step">
+            <h3>Get confirmation</h3>
+            <p>You'll receive a confirmation email, and I'll reach out to go over any details.</p>
+          </div>
+          <div class="step">
+            <h3>Relax</h3>
+            <p>Enjoy your time away. I'll send updates so you know everyone is happy and safe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BOOKING ==================== -->
+    <section class="booking" id="book">
+      <div class="wrap">
+        <div class="center">
+          <span class="eyebrow">Schedule a session</span>
+          <h2>Book babysitting or dogsitting</h2>
+          <p class="lead">See my availability and reserve a time. First time booking? Feel free to <a href="#contact">reach out</a> for a quick meet-and-greet first.</p>
+        </div>
+
+        <div class="booking-box">
+          <!--
+            ================= BOOKING EMBED GOES HERE =================
+            GOOGLE CALENDAR:
+              Google Calendar > click your appointment schedule > Share >
+              "Website embed" > "Inline booking page" > Copy code.
+              Delete the <div class="booking-placeholder">...</div> below
+              and paste the code in its place. It will look roughly like:
+                <iframe src="https://calendar.google.com/calendar/appointments/schedules/..." ...></iframe>
+            CALENDLY / CAL.COM: same idea, paste their "inline embed" code here.
+            ===========================================================
+          -->
+          <div class="booking-placeholder">
+            <strong>BOOKING_EMBED_HERE</strong>
+            <span>Paste your Google Calendar booking page embed code here<br>(see the instructions in the code comment).</span>
+          </div>
+        </div>
+
+        <p class="booking-alt">
+          Calendar not loading? <a href="BOOKING_LINK_HERE" target="_blank" rel="noopener">Open the booking page in a new tab</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== GALLERY ==================== -->
+    <section>
+      <div class="wrap">
+        <div class="center">
+          <span class="eyebrow">Happy faces</span>
+          <h2>A few favorite moments</h2>
+          <p class="lead">Always shared with permission from the families and pet owners.</p>
+        </div>
+        <div class="gallery">
+          <!-- PHOTOS: replace each with <img class="photo photo-square" src="images/gallery-1.jpg" alt="..."> -->
+          <div class="photo photo-square photo-placeholder">PHOTO_HERE</div>
+          <div class="photo photo-square photo-placeholder">PHOTO_HERE</div>
+          <div class="photo photo-square photo-placeholder">PHOTO_HERE</div>
+          <div class="photo photo-square photo-placeholder">PHOTO_HERE</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== REVIEWS ==================== -->
+    <!-- Only add real reviews from real clients (with their permission).
+         Delete this whole section if you don't have any yet. -->
+    <section style="padding-top: 0;">
+      <div class="wrap">
+        <div class="center">
+          <span class="eyebrow">Kind words</span>
+          <h2>What families say</h2>
+        </div>
+        <div class="reviews">
+          <div class="review">
+            <p>REVIEW_HERE</p>
+            <span>REVIEWER_Rylee Brunett</span>
+          </div>
+          <div class="review">
+            <p>REVIEW_HERE</p>
+            <span>REVIEWER_Rylee Brunett</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="faq" id="faq">
+      <div class="wrap">
+        <div class="center">
+          <span class="eyebrow">Questions</span>
+          <h2>Frequently asked</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>What ages do you babysit?</summary>
+            <p>All ages, from infants to teens. I adjust activities and routines to fit each child.</p>
+          </details>
+          <details>
+            <summary>Can we meet before booking?</summary>
+            <p>Absolutely. I'm happy to do a quick meet-and-greet with your family or your dog before the first session. Just <a href="#contact">get in touch</a>.</p>
+          </details>
+          <details>
+            <summary>What do you need to know before dogsitting?</summary>
+            <p>Feeding schedule, walk routine, any medications, vet contact info, and your dog's quirks. I'll send a short checklist after you book.</p>
+          </details>
+          <details>
+            <summary>What does dog boarding at your home look like?</summary>
+            <p>HOME_DETAILS_HERE (e.g. fenced yard, other pets in the home, how many dogs you take at once).</p>
+          </details>
+          <details>
+            <summary>How do I pay?</summary>
+            <p>Venmo or cash at the end of the session</p>
+          </details>
+          <details>
+            <summary>What's your cancellation policy?</summary>
+            <p>CANCELLATION_POLICY_HERE (e.g. please give at least 24 hours' notice).</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="center">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Let's chat</h2>
+          <p class="lead">Questions, special requests, or want to set up a meet-and-greet? I'd love to hear from you.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="label">Email</div>
+            <a href="mailto:rybrun23@gmail.com">rybrun23@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <div class="label">Call or text</div>
+            <a href="tel:PHONE_HERE">513-509-5410</a>
+          </div>
+          <div class="contact-item">
+            <div class="label">Service area</div>
+            <div class="value">Bethesda, MD &amp; surrounding areas</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="wrap">
+      <p>© <span id="year">2026</span> Rylee Brunett · Babysitting &amp; Dogsitting · Bethesda, MD</p>
+      <p><a href="#book">Book a session</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
